@@ -1,0 +1,27 @@
+.advantage-list {
+  display: flex;
+}
+.advantage-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantage-list__icon {
+  @include centered();
+  height: 120px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.advantage-list__heading {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+.advantage-list__paragraph {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+  width: 270px;
+}

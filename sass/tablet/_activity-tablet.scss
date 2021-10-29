@@ -1,0 +1,23 @@
+.activity {
+  display: flex;
+}
+.activity__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.activity__container {
+  position: relative;
+}
+.activity__text {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}

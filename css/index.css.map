@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,EAAE",
+    "sources": [
+        "../sass/desktop/index.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
