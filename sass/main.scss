@@ -1,14 +1,14 @@
 @import './base/fonts';
 @import './base/normalize';
+@import './base/reset';
 @import './utils/vars';
 @import './utils/mixins';
-@import './base/reset';
 @import './utils/hidden';
-@import './base/section';
-@import './base/container';
 @import './components/header';
+@import './base/container';
 @import './components/hero';
 @import './components/modal-window';
+@import './base/section';
 @import './components/advantages';
 @import './components/activity';
 @import './components/team';
@@ -20,6 +20,3 @@
 @import './components/portfolio-header';
 @import './components/portfolio-filter';
 @import './components/portfolio-gallery';
-@import "./desktop/index.scss";
-@import "./mobile/index.scss";
-@import "./tablet/index.scss";
