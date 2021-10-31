@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- header -->
-    <!-- <header class="header">
+    <header class="header">
     <div class="header__container container">
         <nav class="nav">
             <a href="./index.html" class="page-logo">Web<span class="page-logo__color">Studio</span></a>
@@ -39,7 +39,7 @@
             </li>
         </ul>
     </div>
-</header> -->
+</header>
 
     <!-- main information -->
     <main>
@@ -111,7 +111,8 @@
             <li class="activity__item">
               <div class="activity__container">
                 <img
-                  src="./images/development.jpg"
+                  srcset="./images/box1-1desktop.jpg 1x, ./images/box1-2desktop.jpg 2x"
+                  src="./images/box1-1desktop.jpg"
                   alt="разработка сайта"
                   width="370"
                   height="294"
@@ -122,7 +123,8 @@
             <li class="activity__item">
               <div class="activity__container">
                 <img
-                  src="./images/mobile-version.jpg"
+                  srcset="./images/box2-1desktop.jpg 1x, ./images/box2-2desktop.jpg 2x"
+                  src="./images/box2-1desktop.jpg"
                   alt="дизайн сайта"
                   width="370"
                   height="294"
@@ -132,7 +134,13 @@
             </li>
             <li class="activity__item">
               <div class="activity__container">
-                <img src="./images/color-scheme.jpg" alt="стиль сайта" width="370" height="294" />
+                <img
+                  srcset="./images/box3-1desktop.jpg 1x, ./images/box3-2desktop.jpg 2x"
+                  src="./images/box3-1desktop.jpg"
+                  alt="стиль сайта"
+                  width="370"
+                  height="294"
+                />
                 <p class="activity__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -141,234 +149,347 @@
       </section>
 
       <!-- Our team -->
-      <!-- <section class="section section__team">
+      <section class="section section__team">
         <div class="container">
-            <h2 class="section__title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
 
-            <ul class="team-cards">
+          <ul class="team-cards">
+            <li class="team-cards__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-card1-1mob.jpg 1x,
+                    ./images/team/team-card1-2mob.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card1-1tablet.jpg 1x,
+                    ./images/team-card1-2tablet.jpg      2x
+                  "
+                  media="(max-width: 1199x)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card1-1desktop.jpg 1x,
+                    ./images/team/team-card1-2desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/team/team-card1-1mob.jpg"
+                  alt="Дизайнер продукта"
+                  width="270"
+                  height="260"
+                  class="team-cards__img"
+                />
+              </picture>
 
-                <li class="team-cards__item">
-                    <img src="./images/product-designer.jpg" alt="Дизайнер продукта" width="270"
-                        height="260" />
+              <div class="card-content">
+                <h3 class="card-content__title">Игорь Демьяненко</h3>
+                <p class="card-content__text">Product Designer</p>
 
-                    <div class="card-content">
-                        <h3 class="card-content__title">Игорь Демьяненко</h3>
-                        <p class="card-content__text">Product Designer</p>
+                <ul class="social-block">
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-                        <ul class="social-block">
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#linkedin"></use>
-                                    </svg>
-                                </a>
+            <li class="team-cards__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-card2-1mob.jpg 1x,
+                    ./images/team/team-card2-2mob.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card2-1tablet.jpg 1x,
+                    ./images/team-card2-2tablet.jpg      2x
+                  "
+                  media="(max-width: 1199x)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card2-1desktop.jpg 1x,
+                    ./images/team/team-card2-2desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/team/team-card2-1mob.jpg"
+                  alt="Фронтенд-разработчик"
+                  width="270"
+                  height="260"
+                  class="team-cards__img"
+                />
+              </picture>
 
-                        </ul>
-                    </div>
-                </li>
+              <div class="card-content">
+                <h3 class="card-content__title">Ольга Репина</h3>
+                <p class="card-content__text">Frontend Developer</p>
 
-                <li class="team-cards__item">
-                    <img src="./images/frontend.jpg" alt="Фронтенд-разработчик" width="270"
-                        height="260" />
+                <ul class="social-block">
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-                    <div class="card-content">
-                        <h3 class="card-content__title">Ольга Репина</h3>
-                        <p class="card-content__text">Frontend Developer</p>
+            <li class="team-cards__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-card3-1mob.jpg 1x,
+                    ./images/team/team-card3-2mob.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card3-1tablet.jpg 1x,
+                    ./images/team-card3-2tablet.jpg      2x
+                  "
+                  media="(max-width: 1199x)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card3-1desktop.jpg 1x,
+                    ./images/team/team-card3-2desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/team/team-card3-1mob.jpg"
+                  alt="Маркетинг"
+                  width="270"
+                  height="260"
+                  class="team-cards__img"
+                />
+              </picture>
 
-                        <ul class="social-block">
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+              <div class="card-content">
+                <h3 class="card-content__title">Николай Тарасов</h3>
+                <p class="card-content__text">Marketing</p>
 
-                <li class="team-cards__item">
-                    <img src="./images/marketing.jpg" alt="Маркетинг" width="270" height="260" />
+                <ul class="social-block">
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-                    <div class="card-content">
-                        <h3 class="card-content__title">Николай Тарасов</h3>
-                        <p class="card-content__text">Marketing</p>
+            <li class="team-cards__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-card4-1mob.jpg 1x,
+                    ./images/team/team-card4-2mob.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card4-1tablet.jpg 1x,
+                    ./images/team-card4-2tablet.jpg      2x
+                  "
+                  media="(max-width: 1199x)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card4-1desktop.jpg 1x,
+                    ./images/team/team-card4-2desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/team/team-card4-1mob.jpg"
+                  alt="Пользовательский интерфейс"
+                  width="270"
+                  height="260"
+                  class="team-cards__img"
+                />
+              </picture>
 
-                        <ul class="social-block">
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                
-                <li class="team-cards__item">
-                    <img src="./images/ui-designer.jpg" alt="Пользовательский интерфейс" width="270"
-                        height="260" />
+              <div class="card-content">
+                <h3 class="card-content__title">Михаил Ермаков</h3>
+                <p class="card-content__text">UI Designer</p>
 
-                    <div class="card-content">
-                        <h3 class="card-content__title">Михаил Ермаков</h3>
-                        <p class="card-content__text">UI Designer</p>
-
-                        <ul class="social-block">
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-block__item">
-                                <a href="" class="social-block__link">
-                                    <svg class="social-block__icon">
-                                        <use href="./images/symbol-defs.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+                <ul class="social-block">
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-block__item">
+                    <a href="" class="social-block__link">
+                      <svg class="social-block__icon">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
-    </section> -->
+      </section>
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
-            <h2 class="section__title">Постоянные клиенты</h2>
+          <h2 class="section__title">Постоянные клиенты</h2>
 
-            <ul class="companies-list">
-                <li class="companies-list__item">
-                    <a href="" class="companies-list__link">
-                        <svg class="companies-list__icon" width="106" height="60">
-                            <use href="./images/symbol-defs.svg#first-companies"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="companies-list__item">
-                    <a href="" class="companies-list__link">
-                        <svg class="companies-list__icon" width="106" height="60">
-                            <use href="./images/symbol-defs.svg#second-companies"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="companies-list__item">
-                    <a href="" class="companies-list__link">
-                        <svg class="companies-list__icon" width="106" height="60">
-                            <use href="./images/symbol-defs.svg#third-companies"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="companies-list__item">
-                    <a href="" class="companies-list__link">
-                        <svg class="companies-list__icon" width="106" height="60">
-                            <use href="./images/symbol-defs.svg#fourth-companies"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="companies-list__item">
-                    <a href="" class="companies-list__link">
-                        <svg class="companies-list__icon" width="106" height="60">
-                            <use href="./images/symbol-defs.svg#fifth-companies"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="companies-list__item">
-                    <a href="" class="companies-list__link">
-                        <svg class="companies-list__icon" width="106" height="60">
-                            <use href="./images/symbol-defs.svg#sixth-companies"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+          <ul class="companies-list">
+            <li class="companies-list__item">
+              <a href="" class="companies-list__link">
+                <svg class="companies-list__icon" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#first-companies"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="companies-list__item">
+              <a href="" class="companies-list__link">
+                <svg class="companies-list__icon" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#second-companies"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="companies-list__item">
+              <a href="" class="companies-list__link">
+                <svg class="companies-list__icon" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#third-companies"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="companies-list__item">
+              <a href="" class="companies-list__link">
+                <svg class="companies-list__icon" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#fourth-companies"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="companies-list__item">
+              <a href="" class="companies-list__link">
+                <svg class="companies-list__icon" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#fifth-companies"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="companies-list__item">
+              <a href="" class="companies-list__link">
+                <svg class="companies-list__icon" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#sixth-companies"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-    </section> -->
+      </section>
     </main>
 
     <!-- footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
     <div class="footer-container container ">
-        <div>
+        <div class="footer-box">
+            <div class="address">
             <a class="footer-logo" href="./index.html">Web<span class="footer-logo__text logo">Studio</span></a>
             <address class="footer-address">
                 <ul class="footer-address__list">
@@ -417,11 +538,12 @@
                 </li>
             </ul>
         </div>
-
+        </div>
+        
         <form class="subscribe" action="">
             <h2 class="subscribe__header">Подпишитесь на рассылку</h2>
             <div class="subscribe__container">
-                <label>
+                <label class="subscribe__label">
                     <input class="subscribe__input" type="email" name="mail" placeholder="E-mail" />
                 </label>
 
@@ -435,7 +557,7 @@
     </div>
 
     </div>
-</footer> -->
+</footer>
     <!-- modal window -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">

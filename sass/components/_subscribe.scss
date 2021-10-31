@@ -1,18 +1,43 @@
-.subscribe__container {
-  display: flex;
-  flex-direction: row;
+.subscribe {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 70px;
+  }
 }
 
 .subscribe__header {
-  display: inline-block;
+  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__header {
+    display: inline-block;
+  }
+}
 .subscribe__button {
-  display: flex;
+  // display: flex;
+  margin-right: auto;
+  margin-left: auto;
   align-items: center;
   font-style: inherit;
   @include font(700, 16px, 0.06em);
@@ -22,21 +47,55 @@
   border: 0;
   padding: 10px 32px;
   min-width: 200px;
-  margin-left: 12px;
+
   cursor: pointer;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
+.subscribe__button {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+  }
+  @media (min-width: 1200px) {
+    margin-left: 12px;
+  }
+}
 
 .subscribe__input {
   padding: 15px 0px 15px 16px;
-  width: 358px;
+  // width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: var(--btn-b-radius);
   box-shadow: var(--box-shadow-btn);
   background-color: var(--secondary-darkgray-color);
   color: var(--primary-white-color);
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
+// @media (max-width: 767px) {
+//   .subscribe__input {
+//     width: 100%;
+//     margin-bottom: 20px;
+//   }
+// }
+// @media (min-width: 768px) and (max-width: 1199px) {
+//   .subscribe__input {
+//     width: 450px;
+//   }
+
 .subscribe__icon {
   margin-left: 10px;
   width: 24px;

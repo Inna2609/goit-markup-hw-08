@@ -10,7 +10,6 @@
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: center;
   }
 }
 .advantage-list__item {
@@ -21,7 +20,7 @@
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: calc((100%-4 * 15px) / 2);
+    width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
     width: 354px;
   }

@@ -2,25 +2,87 @@
   background-color: var(--third-title-color);
 }
 .team-cards {
-  display: flex;
-  margin-left: calc(-1 * 30px);
-  & .team-cards__item {
-    margin-left: 30px;
-    flex-basis: calc(100% / 4 - 30px);
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  // & .team-cards__item {
+  //   margin-left: 30px;
+  //   flex-basis: calc(100% / 4 - 30px);
+  //   border-radius: 0px 0px 4px 4px;
+  //   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  //     0px 2px 1px rgba(0, 0, 0, 0.2);
+  // }
+}
+.team-cards {
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: -1 * 30px;
   }
 }
 
 .team-cards__item {
   background-color: var(--primary-white-color);
+  // text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 2 * 15px) / 2);
+    width: 354px;
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    width: 270px;
+  }
+}
+.team-cards__img {
+  margin-top: 0;
+
+  width: 100%;
+  height: auto;
+  @media screen and (min-width: 480px) {
+    height: 460px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 374px;
+    object-fit: cover;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 260px;
+  }
 }
 .card-content {
   padding: 30px 0;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 24px;
+  }
 }
 .card-content__title {
+  margin-top: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -35,6 +97,7 @@
   line-height: 1.18;
   text-align: center;
   margin-bottom: 16px;
+  margin-top: 0;
 }
 .social-block {
   display: flex;
