@@ -1,6 +1,12 @@
 .header {
-  background-color: var(--primary-white-color);
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
 }
 .header__container {
   display: flex;
@@ -12,10 +18,10 @@
   line-height: 1.19;
   color: var(--accent-color);
   text-decoration: none;
-  margin-right: 93px;
+  // margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 25px;
-  align-items: center;
+  // align-items: center;
 }
 .page-logo__color {
   color: var(--title-text-color);
@@ -26,9 +32,19 @@
 }
 .site-nav {
   display: flex;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 .site-nav__link {
-  text-decoration: none;
   color: var(--primary-text-color);
   @include font(500, 14px, 0.02em);
   position: relative;
@@ -59,20 +75,39 @@
 
 .contacts {
   display: flex;
-  margin-left: auto;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .contacts__link {
-  text-decoration: none;
   color: var(--secondary-text-color);
   @include font(500, 14px, 0.02em);
-  padding: 32px 0px 32px 0px;
-  display: inline-flex;
-  align-self: start;
-  justify-content: center;
-  align-items: center;
+  // padding: 32px 0px 32px 0px;
+  // display: inline-flex;
+  // align-self: start;
+  // justify-content: center;
+  // align-items: center;
   transition: color var(--temporary-function);
+  @media screen and (min-width: 768px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 31px;
+    font-size: 14px;
+  }
 }
+
 .contacts__mail {
   margin-right: 10px;
   width: 16px;
@@ -90,6 +125,8 @@
   color: var(--accent-color);
 }
 
-.contacts__item:not(:first-child) {
-  margin-left: 50px;
+.contacts__item:not(:last-child) {
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }

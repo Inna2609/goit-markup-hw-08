@@ -12,19 +12,48 @@
     opacity: 0;
     pointer-events: none;
   }
+  @media screen and (max-height: 600px) {
+    overflow-y: scroll;
+  }
 }
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  padding: 40px;
+  height: 100vh;
   background-color: var(--primary-white-color);
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform var(----temporary-function), opacity var(----temporary-function);
-  .backdrop.is-hidden & {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.1);
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: 450px;
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .backdrop.is-hidden & {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+  }
+
+  @media screen and (max-height: 430px) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .backdrop.is-hidden & {
+      transform: translatex(-50%) scale(0.8);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
   }
 }
 
