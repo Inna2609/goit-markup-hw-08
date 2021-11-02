@@ -1978,6 +1978,7 @@ input::placeholder {
 
 .gallery-list__link {
   display: block;
+  height: 100%;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow var(--temporary-function);
   transition: -webkit-box-shadow var(--temporary-function);
@@ -2011,12 +2012,12 @@ input::placeholder {
 }
 
 @media screen and (min-width: 768px) {
-  .overlay-text .overlay-text {
+  .overlay-text {
     padding: 49px 24px;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .overlay-text {
     padding: 63px 23px;
   }
