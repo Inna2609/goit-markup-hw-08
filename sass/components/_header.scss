@@ -12,6 +12,17 @@
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .header__container {
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 480px;
+    width: 100%;
+}
+}
+
 .page-logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -27,8 +38,11 @@
   color: var(--title-text-color);
 }
 .nav {
-  display: flex;
+    display: flex;
   align-items: center;
+   @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 .site-nav {
   display: flex;

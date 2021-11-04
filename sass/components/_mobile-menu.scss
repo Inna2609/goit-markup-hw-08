@@ -1,0 +1,120 @@
+.menu-container {
+  position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   padding-top: 48px;
+   padding-bottom: 48px;
+   padding-left: 40px;
+   background: var(--primary-white-color);
+   border-radius: 4px;
+   z-index: 999;
+   transform: translateX(100%);
+   transition: transform 250ms ease-in-out;
+
+     @media screen and (max-height: 430px) {
+    overflow-y: scroll;
+  }
+   &::-webkit-scrollbar{
+      width: 0;
+   }
+}
+.menu-container.is-open {
+   transform: translateX(0);
+}
+.menu-close {
+   min-height: 40px;
+   min-width: 40px;
+  @include centered();
+   margin: 0;
+   padding: 0;
+   cursor: pointer;
+   border: none;
+   border-radius: 50%;
+   outline: none;
+   background-color: var(--primary-white-color);
+   transition: fill var(--temporary-function);
+   &:hover,
+   &:focus { background-color: var(--primary-white-color);
+   fill: var(--accent-color);
+  }
+   @media (min-width: 768px) {
+      display: none;
+   }
+}
+
+.menu-open {
+  margin: 0;
+   @media screen and (min-width: 768px){
+      display: none;
+   }
+}
+.menu-container .menu-close {
+  position: absolute;
+   top: 10px;
+   right: 15px;
+}
+
+.burger-list__link {
+  @include font(500, 40px, 0.02em);
+  line-height: 1.17;
+  color: var(--primary-text-color);
+  transition: color var(--temporary-function);
+  &:hover,
+   &:focus {
+     color: var(--accent-color);
+    }
+   &--current {
+      color: var(--accent-color);
+}
+}
+.burger-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.burger-contacts__item {
+   max-width: 297px;
+   &:last-child{
+      margin-bottom: 64px;
+   }
+   &:first-child{
+      margin-bottom: 32px;  
+   }
+}
+.burger-contacts__link--tel {
+  @include font(500, 34px, 0.02em);
+   line-height: 1.17;
+   color: var(--accent-color);
+   @media screen and (max-width: 480px) {
+      font-size: 26px;  
+   }
+}
+.burger-contacts__link--mail {
+  @include font(500, 24px, 0.02em);
+   line-height: 1.17;
+   color: var(--secondary-text-color);
+}
+.burger-socials {
+  display: flex;
+}
+.burger-socials__list:not(:last-child) {
+  margin-right: 10px;
+}
+.burger-socials__link {
+@include font(500, 18px, 0.02em);
+line-height: 1.22;
+color: var(--accent-color);
+}
+.line {
+   width: 1px;
+   height: 25px;
+   background-color: #21212133;
+   border: 1px solid #21212133; 
+   margin-left: 10px;
+}
+.burger {
+  display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
