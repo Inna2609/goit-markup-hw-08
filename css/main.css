@@ -1911,8 +1911,16 @@ input::placeholder {
 }
 
 .portfolio {
-  background-color: var(--primary-white-color);
-  border: 1px solid #ececec;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding: 0;
+  }
 }
 
 .portfolio__container {
@@ -1939,12 +1947,8 @@ input::placeholder {
   line-height: 1.19;
   color: var(--accent-color);
   text-decoration: none;
-  margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 25px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .portfolio-logo__color {
@@ -1955,6 +1959,27 @@ input::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    margin-left: 93px;
+  }
 }
 
 .portfolio-list__link {
@@ -2104,6 +2129,14 @@ input::placeholder {
 .gallery-list__link:hover, .gallery-list__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .overlay-text {
