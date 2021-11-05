@@ -5,8 +5,11 @@
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 40px;
+   @media screen and (min-width: 768px) {
+     padding: 40px;
 }
+  }
+
 .form-header {
   font-weight: 700;
   font-size: 20px;
@@ -90,14 +93,15 @@
 }
 .checkbox {
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centered();
   line-height: 1.71;
   font-size: 14px;
   font-weight: 400;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
 }
 
 .checkbox__input {
@@ -111,6 +115,10 @@
   color: var(--accent-color);
   display: inline-block;
   margin-left: 3px;
+  @media screen and (max-width: 767px) {
+    font-size: 11px;
+    text-decoration: underline;
+  }
 }
 
 .checkbox__span {
@@ -127,7 +135,16 @@
     border-color: var(--accent-color);
   }
 }
+.checkbox__text {
+  margin-left: 8px;
+  color: var(--secondary-text-color);
+  font-size: 11px;
 
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+}
 .checkbox__icon {
   width: 16px;
   height: 15px;

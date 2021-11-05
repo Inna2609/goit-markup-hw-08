@@ -38,6 +38,13 @@
                         </a>
                     </li>
                 </ul>
+                <div>
+                    <button class="menu-open menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg class="menu-toggle__icon--open" width="24" height="16">
+                            <use href="./images/symbol-defs.svg#open-menu"></use>
+                        </svg>
+                    </button>
+                </div>
     </div>
     
 </header>
@@ -308,10 +315,68 @@
     </div>
 
     </div>
-</footer>  
+</footer>
+<!-- mobile menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-close menu-toggle js-close-menu">
+        <svg class="menu-toggle__icon--close" width="40" height="40" aria-label="переключатель">
+            <use href="./images/symbol-defs.svg#close-bn"></use>
+        </svg>
+    </button>
+
+    <div class="burger">
+        <ul class="burger-list">
+            <li class="burger-list__item">
+                <a class="burger-list__link" href="./index.html">Студия</a>
+            </li>
+            <li class="burger-list__item">
+                <a class="burger-list__link burger-list__link--current" href="">Портфолио</a>
+            </li>
+            <li class="burger-list__item">
+                <a class="burger-list__link" href="">Контакты</a>
+            </li>
+        </ul>
+
+        <div>
+            <ul class="burger-contacts">
+                <li class="burger-contacts__item">
+                    <a class="burger-contacts__link burger-contacts__link--tel"
+                        href="tel:+380961111111">+380961111111</a>
+                </li>
+                <li class="burger-contacts__item">
+                    <a class="burger-contacts__link burger-contacts__link--mail"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+
+            <ul class="burger-socials">
+                <li class="burger-socials__list">
+                    <a class="burger-socials__link" href="">Instagram</a>
+                    <span class="line"></span>
+                </li>
+                <li class="burger-socials__list">
+                    <a class="burger-socials__link" href="">Twitter</a>
+                    <span class="line"></span>
+                </li>
+                <li class="burger-socials__list">
+                    <a class="burger-socials__link" href="">Facebook</a>
+                    <span class="line"></span>
+                </li>
+                <li class="burger-socials__list">
+                    <a class="burger-socials__link" href="">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
 
 <script src="./js/modal.js"></script>
-<script src="./js/mobile-menu.js"></script>
+<script defer src="./js/mobile-menu.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
 
 </body>
 </html>

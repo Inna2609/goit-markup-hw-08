@@ -41,7 +41,7 @@
         </ul>
         <div>
           <button class="menu-open menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg class="menu-toggle__icon--open" width="40" height="40">
+            <svg class="menu-toggle__icon--open" width="24" height="16">
               <use href="./images/symbol-defs.svg#open-menu"></use>
             </svg>
           </button>
@@ -531,21 +531,21 @@
         </svg>
     </button>
 
-  <div class="burger">
+<div class="burger">
   <ul class="burger-list">
     <li class="burger-list__item">
       <a class="burger-list__link burger-list__link--current" href="">Студия</a>
     </li>
     <li class="burger-list__item">
-      <a class="burger-list__link" href="=./portfolio.html">Портфолио</a>
+      <a class="burger-list__link" href="./portfolio.html">Портфолио</a>
     </li>
     <li class="burger-list__item">
       <a class="burger-list__link" href="">Контакты</a>
     </li>
   </ul>
 
-  
-    <ul class="burger-contacts">
+ <div>
+      <ul class="burger-contacts">
       <li class="burger-contacts__item">
         <a class="burger-contacts__link burger-contacts__link--tel" href="tel:+380961111111">+380961111111</a>
       </li>
@@ -555,7 +555,7 @@
       </li>
     </ul>
 
-    <ul class="burger-socials">
+   <ul class="burger-socials">
       <li class="burger-socials__list">
         <a class="burger-socials__link" href="">Instagram</a>
         <span class="line"></span>
@@ -572,6 +572,8 @@
         <a class="burger-socials__link" href="">LinkedIn</a>
       </li>
     </ul>
+</div>
+   
   </div>
 
 </div>
@@ -627,8 +629,11 @@
                 <use href="./images/symbol-defs.svg#vector"></use>
               </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю
+            <span class="checkbox__text">
+               Соглашаюсь с рассылкой и принимаю
             <a class="checkbox__link" href="#">Условия договора</a>
+            </span>
+           
           </label>
 
           <button type="submit" class="checkbox__button">Отправить</button>
