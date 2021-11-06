@@ -10,7 +10,9 @@
 .section__activity {
   display: none;
   @media screen and (min-width: 1200px) {
-    display: flex;
+    padding-top: 0;
+    // display: flex;
+    display: block;
   }
 }
 .section__title {

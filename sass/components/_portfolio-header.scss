@@ -1,7 +1,7 @@
 .portfolio {
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
+ padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 
   @media screen and (min-width: 768px) {
@@ -11,16 +11,6 @@
 .portfolio__container {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 767px) {
-  .portfolio__container {
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    max-width: 480px;
-    width: 100%;
-}
-}
 }
 .portfolio-nav {
     display: flex;
@@ -30,15 +20,18 @@
 }
 }
 .portfolio-logo {
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
+   font-family: 'Raleway', sans-serif;
+  font-size: 24px;
   line-height: 1.19;
   color: var(--accent-color);
-  text-decoration: none;
   // margin-right: 93px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+ 
   // align-items: center;
+  @media screen and (min-width: 768px) {
+ padding-top: 25px;
+  padding-bottom: 25px;
+font-size: 26px;
+  }
 }
 .portfolio-logo__color {
   color: var(--title-text-color);

@@ -425,8 +425,8 @@ a {
 }
 
 .menu-toggle__icon--open {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
 }
 
 .menu-open {
@@ -551,8 +551,8 @@ a {
 
 .header {
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -569,17 +569,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (max-width: 767px) {
-  .header__container {
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    max-width: 480px;
-    width: 100%;
-  }
 }
 
 .page-logo {
@@ -705,6 +694,12 @@ a {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .contacts__link {
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -716,8 +711,12 @@ a {
 
 @media screen and (min-width: 768px) {
   .contacts__link {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 12px;
   }
 }
@@ -801,7 +800,8 @@ a {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: url("../images/bg/bg_mob_2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg/bg_mob_2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/bg_mob_2x.jpg");
   }
 }
 
@@ -816,7 +816,8 @@ a {
 
 @media (min-width: 481px) and (max-width: 767px) and (min-device-pixel-ratio: 2), (min-width: 481px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 481px) and (max-width: 767px) and (min-resolution: 192dpi), (min-width: 481px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/bg/bg_tablet_2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg/bg_tablet_2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/bg_tablet_2x.jpg");
   }
 }
 
@@ -831,7 +832,8 @@ a {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/bg/bg_desktop_2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg/bg_desktop_2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/bg_desktop_2x.jpg");
   }
 }
 
@@ -1031,9 +1033,8 @@ a {
 
 @media screen and (min-width: 1200px) {
   .section__activity {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    padding-top: 0;
+    display: block;
   }
 }
 
@@ -1198,7 +1199,6 @@ a {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-top: -30px;
   }
 }
 
@@ -1471,12 +1471,10 @@ a {
 
 .footer {
   background-color: var(--secondary-darkgray-color);
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 60px 0;
 }
 
 .footer-container {
-  padding: 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1512,6 +1510,7 @@ a {
         -ms-flex-align: baseline;
             align-items: baseline;
     padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1530,15 +1529,19 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-box {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
     margin-bottom: 60px;
+    width: 100%;
   }
 }
 
@@ -1591,7 +1594,6 @@ a {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    margin-right: 165px;
   }
 }
 
@@ -1656,7 +1658,6 @@ a {
 @media screen and (max-width: 767px) {
   .join {
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -1761,7 +1762,6 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-right: 70px;
   }
 }
 
@@ -2159,8 +2159,8 @@ input::placeholder {
 
 .portfolio {
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -2177,17 +2177,6 @@ input::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (max-width: 767px) {
-  .portfolio__container .portfolio__container {
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    max-width: 480px;
-    width: 100%;
-  }
 }
 
 .portfolio-nav {
@@ -2207,12 +2196,17 @@ input::placeholder {
 
 .portfolio-logo {
   font-family: 'Raleway', sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   color: var(--accent-color);
-  text-decoration: none;
-  padding-top: 25px;
-  padding-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 26px;
+  }
 }
 
 .portfolio-logo__color {
@@ -2330,20 +2324,22 @@ input::placeholder {
   min-width: 73px;
 }
 
-.gallery-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .gallery-list {
     margin-top: -30px;
     margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 767px) and (min-width: 768px) {
+  .gallery-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
